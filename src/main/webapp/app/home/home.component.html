@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-md-3">
+    <span class="hipster img-fluid rounded"></span>
+  </div>
+
+  <div class="col-md-9">
+    <h1 class="display-4" jhiTranslate="home.title">Health is a priority!</h1>
+
+    <div [ngSwitch]="isAuthenticated()">
+      <div class="alert alert-success" *ngSwitchCase="true">
+        <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message" [translateValues]="{ username: account.login }"
+          >You are logged in as user "{{ account.login }}".</span
+        >
+      </div>
+
+      <div class="alert alert-warning" *ngSwitchCase="false">
+        <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>&nbsp;
+        <a class="alert-link" routerLink="account/register" jhiTranslate="global.messages.info.register.link">Register a new account</a>
+      </div>
+    </div>
+
+    <p jhiTranslate="home.paragraf1">This web platform nemed HealthForYou is intended for scheduling medical consultations in a polyclinic.
+      It is created to facilitate the organization of consultation. Here are registered all the doctors employed with the respective 
+      degrees and specializations.The people at the reception create accounts for clients, registrations with details about them, 
+      appointments for the date and the chosen doctor. After a consultation or a control, the conclusions related to the corresponding 
+      treatment and observations will be uploaded.
+    </p>
+
+    <p jhiTranslate="home.paragraf2">Any client can see their data, available doctors, their own appointments or their conclusions. The 
+      platform is also used by doctors. They can have access to the consultations they have at any time.
+    </p>
+
+    <p jhiTranslate="home.paragraf3">An appointment with one of the doctors is made by calling the reception of the polyclinic. From here 
+      an account will be created with the e-mail address, in case the client is new and does not have one created. After the data is 
+      registered, the consultation will be created at the time chosen by the client. He will receive, at the specified e-mail address, 
+      a link to choose the account password. after that, he will be able to authenticate on the platform in order to be able to view the 
+      personal appointments and the conclusions of the doctor. To reduce the waiting time during the creation of an appointment, the client 
+      can register an account on the platform alone. After activating it, he can appeal to the reception of the polyclinic.
+
+    </p>
+
+    
+  </div>
+</div>
