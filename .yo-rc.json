@@ -43,6 +43,9 @@
     "clientThemeVariant": "",
     "languages": ["ro", "en"],
     "entities": ["Specializare", "Grad", "Medic", "Client", "Consultatie", "ConcluziiConsultatie"],
-    "lastLiquibaseTimestamp": 1622624219000
+    "lastLiquibaseTimestamp": 1622624219000,
+    "herokuAppName": "test-1-oana",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   }
 }
