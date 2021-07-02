@@ -44,7 +44,7 @@
     "languages": ["ro", "en"],
     "entities": ["Specializare", "Grad", "Medic", "Client", "Consultatie", "ConcluziiConsultatie"],
     "lastLiquibaseTimestamp": 1622624219000,
-    "herokuAppName": "test-1-oana",
+    "herokuAppName": "still-garden-34203",
     "herokuDeployType": "git",
     "herokuJavaVersion": "11"
   }

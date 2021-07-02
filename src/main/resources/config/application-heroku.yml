@@ -12,7 +12,7 @@
 
 eureka:
   instance:
-    hostname: test-1-oana.herokuapp.com
+    hostname: still-garden-34203.herokuapp.com
     non-secure-port: 80
     prefer-ip-address: false
 
